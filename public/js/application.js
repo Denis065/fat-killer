@@ -47,30 +47,11 @@ if(exercise) {
     })
     const jsonResponse = await response.json();
     image.src = jsonResponse[0].img;
-    // image.src = jsonResponse.forEach((el) => el === jsonResponse.img);
+    
     
   })
 }
-// if(food) {
-//   food.addEventListener('submit', async(event) => {
-//     event.preventDefault();
-//     const category = event.target.category.value;
-//     const response = await fetch (`https://food-calories1.p.rapidapi.com/categories/${category}/foods`, {
-//       method: "GET",
-//       headers: {
-//         "x-rapidapi-host": "food-calories1.p.rapidapi.com",
-//         "x-rapidapi-key": "cb46bcc1ebmshca119e5e19e437dp1fedb4jsne737fbbed697"
-//       }
-//     })
-//     const jsonResponse = await response.json();
-//     console.log(jsonResponse);
-//     jsonResponse.foods.forEach((el) => {
-//       let ul = document.createElement("li");
-//       ul.innerText = `Имя продукта: ${el.name}, Калории на 100 грамм: ${el.cals_per100grams}`;
-//       forfood.append(ul)
-//     });
-//   })
-// }
+
 
 if(food) {
   food.addEventListener('submit', async(event) => {
